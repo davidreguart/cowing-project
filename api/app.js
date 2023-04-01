@@ -11,10 +11,8 @@ const app = express();
 
 app.use(logger('dev'));
 
-
-
 //** Error handling */
-app.use((req, res, next) => next(createError(404, 'Route not found')));
+app.use((req, res, next) => next(createError(404, 'Route not found =(')));
 
 app.use((error, req, res, next) => {
   if (!error.status) {
@@ -31,4 +29,4 @@ app.use((error, req, res, next) => {
 });
 
 const port = process.env.PORT || 3001;
-app.listen(port, () => console.info(`The port is mooing 🐮 on port ${port}`));
+app.listen(port, () => console.info(`The app is mooing 🐮 on port ${port}`));
