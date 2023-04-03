@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "54cc4d5b-1c2e-47a3-ba61-80d988aed230",
+		"name": "Cowing Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26661811"
+	},
+	"item": [
+		{
+			"name": "Questions",
+			"item": [
+				{
+					"name": "Question",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/questions/642b623055fc82c7cea41748",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"questions",
+								"642b623055fc82c7cea41748"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Questions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/questions",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Question",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/questions/642b1c1ef5a089afd6a202d4",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"questions",
+								"642b1c1ef5a089afd6a202d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Question",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"¿Cuáles son las partes de una petición http?\",\r\n    \"module\": 2,\r\n    \"author\": \"Julio García\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/questions",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Question",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Carlos del Prado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/questions/642b623055fc82c7cea41748",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"questions",
+								"642b623055fc82c7cea41748"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_API_URL",
+			"value": "http://localhost:3001/api/v1",
+			"type": "string"
+		}
+	]
+}
