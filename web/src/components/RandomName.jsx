@@ -35,7 +35,7 @@ function RandomName() {
   const [randomName, setRandomName] = useState('Waiting for...');
 
   return (
-    <div className="mt-28">
+    <div>
       <button
         onClick={() => setRandomName(names[generateRandomIndex(names.length)])}
         className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-2xl shadow-inner group mb-10">
